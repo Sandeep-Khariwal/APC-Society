@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <!-- link of font awesome icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- link of  font family -->
+    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Bungee+Inline&family=Carter+One&family=Monoton&family=Ultra&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student</title>
+
+    <style>
+        .form{
+            background-color: grey;
+            text-align: center;
+        }
+
+        /* code for labeling all data */
+        #fname, #lname, #e-mail, #phone, #gender , #course, #year, #CName{
+            margin-top: 3rem;
+            /* margin-left: 30rem; */
+        }
+        /* code for design button */
+          #button{
+            height: 2rem;
+            width: 4rem;
+            border-radius: 0.5rem;
+            border: solid black 1px;
+            margin-top: 3rem;
+            text-align: center;
+            /* margin-left: 42rem; */
+            margin-bottom: 3rem;
+          }
+
+          #button:hover{
+            cursor: pointer;
+            color: #fff;
+            background-color:#222;
+         }
+        
+          /* code for design all input area */
+          .fname, .lname, .e-mail, .phoneNumber, .CName, .course{
+            height: 2rem;
+            width: 15rem;
+            margin-top: 3rem;
+            border: solid black 1px;
+            border-radius: 0.5rem;
+          }
+
+         .gender , .year, .course{
+            margin-top: 3rem;
+         }
+         
+         .fname, .lname{
+            margin-left: 1rem;
+          }
+
+         .e-mail, .phoneNumber, .course{
+            margin-left: 3rem;
+         }
+
+         .year {
+            margin-left: 4rem;
+            height: 1rem;
+            width: 1rem;
+         }
+         .gender {
+            margin-left: 5.3rem;
+            height: 1rem;
+            width: 1rem;
+         }
+
+         .CName{
+            margin-left: 0.3rem;
+         }
+
+        .welcome{
+           height: 5rem;
+           width: auto;
+           color: white;
+           background-image: linear-gradient(60deg, #6B0772 0%, #AF1281, #360167 100%);   
+         }
+
+         .welcome span{
+            font-family:Bungee Inline;
+            color: crimson;
+         }
+
+    </style>
+
+</head>
+<body>
+
+            <!-- navigation section -->
+            <section id="navbar">
+                <div id="header">
+                <div class="APC">
+                <h1>A <span>P</span> C</h1>
+                </div>
+                <div class="menuList">
+                   <ul>
+                    <li class="active"><a href="index.html"><i class="fa fa-home"></i>Home</a></li>
+                   </ul>
+                </div>
+               </div>
+            </section>
+        <div class="welcome">
+            <marquee> <h1>Welcome to A<span>P</span>C, Join us As a Teacher</h1></marquee>
+        </div>
+
+    <form class="form" action="#">
+        <label id="fname">First Name : </label><input class="fname" type="text" required><br>
+
+        <label id="lname">Last Name : </label><input class="lname" type="text"><br>
+
+        <label id="e-mail">Email : </label><input class="e-mail" type="email" required><br>
+
+        <label id="phone">Phone : </label><input class="phoneNumber" type="number" max="10" min="10" placeholder="+91"><br>
+
+        <label id="gender">Gender : </label><input class="gender" type="radio" name="radioGen">Male
+
+        <input class="gender" type="radio" name="radioGen">Female<br>
+
+        <label id="course" >Course : </label>
+        <select class="course">
+            <option hidden>-- Select Course --</option>
+            <option>B.Voc(Software Development)</option>
+            <option>B.Voc(Banking)</option>
+            <option>B.Sc(Computer Science)</option>
+            <option>B.Com(honers)</option>
+            <option>B.A(Proggram)</option>
+        </select><br>
+
+        <label id="CName">College Name :</label><input class="CName" type="text" required><br>
+        
+        <button type="submit" id="button" value="Submit">Submit</button>
+
+    </form>
+
+            
+<!-- code for footer section -->
+        <div class="footer">
+            <div class="Apc-footer">
+               <p>A<span>P</span>C</p>
+            </div>
+  
+            <div class="footer-info">
+                <h1>Get in Touch With Us</h1>
+            </div>
+  
+            <div class="social-media">
+              <a href="#"><i class="fa fa-instagram"></i></a>
+                <a href="#"><i class="fa fa-facebook-square"></i>
+        </div>
+      </div>
+    
+</body>
+</html>
